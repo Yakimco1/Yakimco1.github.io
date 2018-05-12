@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Running EEL</title>
+    <meta name="msapplication-TileImage" content="images\icons\shoes.svg">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="Stylesheet" href="libs/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css-styles.css"/>
+    <link rel="shortcut icon" href="images/icons/shoes.svg" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/shoes16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icons/shoes32.png">
+    <link rel="manifest" href="webmanifest.json">
+    <link rel="mask-icon" href="images/icons/shoes.svg" color="#5bbad5">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <base href="file:///C:/Users/Yakim/Documents/GitHub/REp.github.io/index.html"/>
+    <link rel="Stylesheet" href="libs/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css-styles.css"/>
+
+</head>
+<body>
+<div class="header-container">
+    <header class="main-header">
+        <a href="index.html">
+            <h1><span class="eel-logo">R</span>UNNING <span class="eel-logo">E</span>EL</h1>
+        </a>
+    </header>
+    <nav class="menubar-container">
+        <div class="opened-menu">
+            <div class="menu-bars" aria-label="Меню"><span class="fa fa-list"></span><span id="menu1">  Running Eel</span></div>
+            <ul role="menubar">
+                <li role="menuitem"><a href="#health">Здоровье</a></li>
+                <li role="menuitem"><a href="#gadgets">Экипировка</a></li>
+                <li role="menuitem"><a href="#people">Люди</a></li>
+                <li role="menuitem"><a href="feedback.html" id="feed">Обратная связь</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<main>
+    <article class="feedback">
+        <header>
+
+        </header>
+        <section>
+            <div class="feedback-form">
+                <h2>Связаться с нами</h2>
+            </div>
+            <div class="feedback-image">
+                <img src="images/article%20images/feedback3.jpg">
+                <p><strong> Наша администрация</strong></p>
+            </div>
+            <form>
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label for="validationDefault01">Имя</label>
+                        <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="Введите имя" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="validationDefault02">Last name</label>
+                        <input type="text" class="form-control" id="validationDefault02" placeholder="Фамилия" value="Введите фамилию" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="validationDefaultUsername">email</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroupPrepend2">@mail</span>
+                            </div>
+                            <input type="email" class="form-control" id="validationDefaultUsername" placeholder="email" aria-describedby="inputGroupPrepend2" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="validationDefault03">Город</label>
+                        <input type="text" class="form-control" id="validationDefault03" placeholder="Город" required>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="validationDefault04">Страна</label>
+                        <input type="text" class="form-control" id="validationDefault04" placeholder="Страна">
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="validationDefault05">Ваш индекс</label>
+                        <input type="text" class="form-control" id="validationDefault05" placeholder="Индекс" required>
+                    </div>
+                </div>
+                <label for="text-area">Введите текст вашего сообщения</label>
+                <textarea id="text-area" rows="25" cols="110" placeholder="Введите ваш текст">
+                </textarea>
+
+                <button class="btn btn-primary" type="submit">Отправить</button>
+            </form>
+
+        </section>
+        <footer>
+            <p><small>Администрация сайта свяжется с вами в самое ближайшее время</small></p>
+        </footer>
+    </article>
+
+
+</main>
+<div class="footer-container">
+    <footer>
+
+        <p> Created by <a href="mailto:yakimgrodno@gmail.com">Yakimovich Vadim</a></p>
+        <button class="fa fa-youtube fa-3x"></button>
+        <button class="fa fa-telegram fa-3x"></button>
+        <button class="fa fa-vk fa-3x"></button>
+
+    </footer>
+</div>
+</body>
+</html>

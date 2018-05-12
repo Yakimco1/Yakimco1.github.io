@@ -1,0 +1,546 @@
+body {
+    font: 1em verdana, arial normal;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    --yellowColor: #edcd1f;
+    --deepblueColor: rgba(30, 45, 59, 1);
+    --lightgrayColor: rgba(255, 255, 255, 0.5);
+    min-width: 300px;
+}
+
+a, ul {
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--lightgrayColor);
+    padding: 0;
+}
+
+/*header*/
+.main-header {
+    display: none;
+}
+
+/*.header-container {*/
+/*background-color: var(--deepblueColor);*/
+/*}*/
+
+.menubar-container {
+    background: var(--deepblueColor);
+}
+
+.menubar-container .opened-menu .menu-bars {
+    display: block;
+    height: 3em;
+    background: var(--deepblueColor);
+}
+
+.menubar-container .opened-menu .menu-bars span {
+    margin: .25em 0;
+    color: var(--yellowColor);
+    font-size: 2em;
+}
+
+.menubar-container .opened-menu:hover ul {
+    display: block;
+}
+
+.menubar-container ul {
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    border-top: .1em solid var(--deepblueColor);
+}
+
+.menubar-container ul > li {
+    text-align: center;
+}
+
+.menubar-container ul > li a {
+    text-align: center;
+    margin: .3em;
+    font-size: 1.2em;
+    padding: .5em;
+    display: block;
+}
+
+.menubar-container ul > li a:hover {
+    color: var(--deepblueColor);
+    background-color: var(--yellowColor);
+}
+
+#menu1 {
+    width: 100%;
+    color: var(--yellowColor);
+    text-align: right;
+}
+
+.parallax {
+    display: none;
+}
+
+/*!*content*!*/
+main > h1 {
+    color: var(--yellowColor);
+    font-size: 2em;
+    padding: .5em auto;
+    text-align: center;
+    font-weight: 400;
+    background: var(--deepblueColor);
+}
+
+img {
+    height: auto;
+    width: 85%;
+    margin: 0 7.5%;
+}
+
+article > a {
+    color: black;
+    text-decoration: none;
+}
+
+article h1:hover {
+    color: var(--yellowColor);
+}
+
+.gadgets {
+    width: 100%;
+}
+
+.gadgets-container {
+    display: block;
+}
+
+/*footer*/
+.footer-container {
+    background-color: var(--deepblueColor);
+    color: var(--lightgrayColor);
+    height: 10em;
+    text-align: center;
+}
+
+footer small {
+    text-align: center;
+    position: relative;
+    top: 1em;
+}
+
+footer button {
+    height: 1.5em;
+    width: 1.5em;
+    color: var(--lightgrayColor);
+    background-color: transparent;
+    border: transparent;
+    border-radius: 50%;
+}
+
+footer button:hover {
+    background-color: var(--yellowColor);
+    color: var(--deepblueColor);
+}
+
+footer a:hover {
+    color: var(--yellowColor);
+}
+
+/*!*feedback page*!*/
+.feedback {
+    width: 100%;
+}
+
+.feedback-form {
+    background: linear-gradient(to top, var(--yellowColor), yellow);
+    color: var(--deepblueColor);
+    height: 4em;
+    margin: 0;
+}
+
+.feedback-form > h2 {
+    text-align: center;
+    padding: .6em;
+    font-size: 1.5em;
+}
+
+.feedback-image img {
+    display: none;
+}
+
+.feedback-image p {
+    display: none;
+}
+
+textarea {
+    height: 5em;
+    width: 100%;
+    resize: none;
+}
+
+.article-link:hover h1 {
+    color: var(--yellowColor);
+}
+
+.title-article header {
+    text-align: center;
+}
+
+.title-article section {
+    width: 99%;
+    margin-left: .5%;
+}
+
+.article-footer address, .article-footer time {
+    display: inline-block;
+    color: gray;
+    position: relative;
+    margin-bottom: .5em;
+}
+
+/*Slideshow container in article*/
+.myS img {
+    width: 100%;
+    height: auto;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+#nextSlide, #prevSlide {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: 1.5em;
+    padding: 1em;
+    color: var(--lightgrayColor);
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: 0.8s ease;
+    border-radius: 0 .1em .1em 0;
+}
+
+#nextSlide {
+    right: 0;
+    border-radius: .1em 0 0 .1em;
+}
+
+#prevSlide:hover, #nextSlide:hover {
+    background-color: var(--yellowColor);
+    /*opacity: .5;*/
+    color: var(--deepblueColor);
+}
+
+.text {
+    color: var(--lightgrayColor);
+    font-size: .8em;
+    padding: .5em;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: .8em;
+    width: .8em;
+    margin: 0 .1em;
+    background-color: var(--deepblueColor);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.8s ease;
+}
+
+.dot:hover {
+    background-color: var(--yellowColor);
+    opacity: .95;
+}
+
+.active {
+    background-color: var(--lightgrayColor);
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+/*saucony page*/
+.gadgets-slider {
+    width: 40%;
+    height: auto%;
+    margin: 1em 30%;
+}
+
+figure {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+figcaption {
+    font-style: italic;
+    text-align: center;
+}
+
+@media screen and (min-width: 820px) {
+    body {
+        font-size: 0.8em;
+        text-decoration: none;
+        min-width: 970px;
+    }
+
+    /*!*header*!*/
+    .main-header {
+        width: 35%;
+        display: inline-block;
+    }
+
+    .main-header h1 {
+        display: inline-block;
+        font-size: 3em;
+        font-weight: normal;
+        padding: 1em;
+        margin: 0;
+        color: var(--deepblueColor);
+        background-color: var(--yellowColor);
+    }
+
+    .eel-logo {
+        color: #7d0000;
+        font-weight: bold;
+    }
+
+    .header-container {
+        background-color: var(--deepblueColor);
+        display: flex;
+        align-items: baseline;
+    }
+
+    .menubar-container .opened-menu:hover ul {
+        display: flex;
+    }
+
+    .menubar-container ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .menubar-container ul > li {
+        padding: 0;
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    .menubar-container .opened-menu .menu-bars {
+        display: none;
+    }
+
+    #feed {
+        width: 9em;
+    }
+
+    .opened-menu {
+        width: 5%;
+        margin: 0;
+    }
+
+    li a:hover {
+        transition: background-color 1.2s ease;
+    }
+
+    .parallax {
+        display: block;
+        perspective: .1em;
+        overflow-x: hidden;
+        overflow-y: auto;
+        background-image: url("images/ruuning.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 32em;
+    }
+
+    .parallax__layer {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    .parallax__layer--base {
+        transform: translateZ(0);
+    }
+
+    .parallax__layer--back {
+        transform: translateZ(-1px);
+    }
+
+    .parallax__group {
+        position: relative;
+        height: 20em;
+        transform-style: preserve-3d;
+        color: var(--lightgrayColor);
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .parallax__group h1 {
+        color: var(--yellowColor);
+        text-shadow: 0.1em .05em var(--lightgrayColor);
+    }
+}
+
+/*pic*/
+.main-image {
+    height: 32em;
+    background-image: url("images/ruuning.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*content*/
+main > h1 {
+    color: var(--yellowColor);
+    font-size: 3em;
+    padding: 1em auto;
+    text-align: center;
+    font-weight: 500;
+    border-right: solid var(--yellowColor) .5em;
+    border-left: solid var(--yellowColor) .5em;
+    background: linear-gradient(0.5turn, rgba(30, 45, 59, 1), rgba(30, 45, 59, .9));
+    margin: 0;
+    margin-top: .5em;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+}
+
+figure img {
+    width: 60%;
+    height: 60%;
+    margin: .5em 20%;
+}
+
+article > a {
+    color: black;
+    text-decoration: none;
+}
+
+article h1:hover {
+    color: var(--yellowColor);
+}
+
+.gadgets {
+    width: 30em;
+}
+
+.gadgets-container {
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+/*!*feedback page*!*/
+.feedback {
+    width: 70%;
+    margin-left: 15%;
+}
+
+.feedback-form {
+    border-radius: .5em;
+    height: 5em;
+    margin: 1em;
+}
+
+.feedback-form h2 {
+    padding: .3em;
+}
+
+.btn, btn-primary {
+    color: var(--lightgrayColor);
+    background-color: var(--deepblueColor);
+    margin: 0;
+}
+
+.btn:hover, btn-primary:hover {
+    color: var(--deepblueColor);
+    background-color: var(--yellowColor);
+}
+
+.feedback-image img {
+    display: initial;
+    width: 100%;
+    height: 35em;
+    border: .2em solid var(--yellowColor);
+    border-radius: 1em;
+}
+
+.feedback-image p {
+    display: block;
+    font-size: large;
+    font-weight: 300;
+    text-align: center;
+    position: relative;
+    bottom: 5em;
+}
+
+textarea {
+    height: auto;
+}
+
+.article-link:hover h1 {
+    transition: .3s ease-in;
+}
+
+.article-link img {
+    filter: brightness(.5);
+}
+
+.article-link:hover img {
+    filter: brightness(1);
+    transition: .3s ease-in;
+}
+
+.title-article section {
+    width: 60%;
+    margin-left: 20%;
+
+.article-footer address, .article-footer time {
+    left: 80%;
+}
+
+/*!*saucony page*!*/
+.gadgets-slider {
+    width: 70%;
+    margin: 1em 15%;
+}
+
+.mySlides {
+    width: 90%;
+    height: auto;
+}
+
+figure {
+    width: 60%;
+    margin: 0 20%;
+}
+
+}
+
