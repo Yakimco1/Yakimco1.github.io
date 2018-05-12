@@ -278,7 +278,7 @@ textarea {
 /*saucony page*/
 .gadgets-slider {
     width: 40%;
-    height: auto%;
+    height: auto;
     margin: 1em 30%;
 }
 
@@ -521,6 +521,7 @@ textarea {
 .title-article section {
     width: 60%;
     margin-left: 20%;
+}
 
 .article-footer address, .article-footer time {
     left: 80%;
@@ -540,7 +541,5 @@ textarea {
 figure {
     width: 60%;
     margin: 0 20%;
-}
-
 }
 
